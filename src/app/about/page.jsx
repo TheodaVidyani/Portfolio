@@ -31,27 +31,37 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
-              src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/Theoda1.jpg"
               alt=""
-              width={112}
-              height={112}
-              className="w-28 h-28 rounded-full object-cover"
+              width={200}
+              height={200}
+              className="w-40 h-40 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
-            </p>
-            {/* BIOGRAPHY QUOTE */}
-            <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </span>
+            I'm an enthusiastic and detail-oriented third-year undergraduate in
+            Information Technology at the University of Moratuwa, Sri Lanka.
+            Currently pursuing a BSc (Hons.) in Information Technology. I am
+            currently working on actively expanding my expertise in software
+            engineering through hands-on projects and leadership experiences.
+            Driven by a passion for innovative software solutions, I bring
+            advanced skills in programming languages like Java and C and am
+            well-versed in web development technologies, including HTML, CSS,
+            JavaScript, and Node.js. I have hands on experience in frameworks
+            like React, and her knowledge spans across databases (MongoDB,
+            MySQL) and project management tools (Jira, ClickUp).{" "}
+          </p>
+
+          <span className="italic">
+            To explore these projects and more, I invite you to visit my
+            portfolio tab and take a comprehensive look at my work and ongoing
+            contributions to the field of software engineering.
+          </span>
+
             {/* BIOGRAPHY SIGN SVG*/}
-            <div className="self-end">
+            {/* <div className="self-end">
               <svg
                 width="185"
                 height="77"
@@ -65,7 +75,8 @@ const AboutPage = () => {
                   strokeWidth="2"
                 />
               </svg>
-            </div>
+            </div> */}
+
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -90,6 +101,7 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
+
           {/* SKILLS CONTAINER */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
@@ -107,11 +119,10 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+
+
+<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JavaScript
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                TypeScript
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 React.js
@@ -120,7 +131,10 @@ const AboutPage = () => {
                 Next.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                SCSS
+                Node.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Express.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tailwind CSS
@@ -129,59 +143,42 @@ const AboutPage = () => {
                 MongoDB
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                PostgreSQL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Node.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Nest.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Express.js
+                MySQL
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Spring Boot
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                GraphQL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Apollo
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Redux
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Framer Motion
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Three.js
+                Java
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                WebGL
+                C
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Webpack
+                Jira
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Vite
+                Clickup
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Docker
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 AWS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              </div> */}
+              {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Firebase
-              </div>
+              </div> */}
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Git
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Figma
-              </div>
+              </div> */}
+
             </motion.div>
             {/* SKILL SCROLL SVG */}
             <motion.svg
@@ -207,47 +204,48 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          {/* EXPERIENCE CONTAINER */}
+
+          {/* EDUCATION CONTAINER */}
           <div
             className="flex flex-col gap-12 justify-center pb-48"
             ref={experienceRef}
           >
-            {/* EXPERIENCE TITLE */}
+            {/* EDUCATION TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              EXPERIENCE
+              EDUCATION
             </motion.h1>
-            {/* EXPERIENCE LIST */}
+            {/* EDUCATION LIST */}
             <motion.div
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               className=""
             >
-              {/* EXPERIENCE LIST ITEM */}
+              
+              {/* EDUCATION LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
                 <div className="w-1/3 ">
-                  {/* JOB TITLE */}
+                  {/* INSTITUTE TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Engineer
+                  University of Moratuwa
                   </div>
-                  {/* JOB DESC */}
+                  {/*  DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
+                  BSc. (Hons.) in Information Technology{" "}
                   </div>
-                  {/* JOB DATE */}
+                  {/*  DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - Present
+                  2022 June - 2026 June (expected)
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                     Apple
-                  </div>
+                  </div> */}
                 </div>
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
@@ -260,7 +258,7 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 "></div>
               </div>
-              {/* EXPERIENCE LIST ITEM */}
+              {/* EDUCATION LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
                 <div className="w-1/3 "></div>
@@ -274,41 +272,42 @@ const AboutPage = () => {
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 ">
-                  {/* JOB TITLE */}
+                  {/* INSTITUTE TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                  University of Colombo School of Computing
                   </div>
-                  {/* JOB DESC */}
+                  {/* DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.{" "}
+                  Diploma in Information Technology (DIT){" "}
                   </div>
-                  {/* JOB DATE */}
+                  {/* DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
+                  2023{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                     Microsoft
-                  </div>
+                  </div> */}
                 </div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
                 <div className="w-1/3 ">
-                  {/* JOB TITLE */}
+                  {/* INSTITUTE TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelancer{" "}
+                  Ave Maria Convent Bolawalana, Negombo{" "}
                   </div>
-                  {/* JOB DESC */}
+                  {/* DESC */}
                   <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
+                    GCE Advanced Level, Physical Science
+                    <br />
+                    Combined Mathematics - B, Chemistry - A , Physics - B<br />Z
+                    Score - 1.5440{" "}
                   </div>
-                  {/* JOB DATE */}
+                  {/* DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
+                  2006 - 2019{" "}
                   </div>
                 </div>
                 {/* CENTER */}
@@ -324,7 +323,33 @@ const AboutPage = () => {
               </div>
             </motion.div>
           </div>
+          
+            {/* EDUCATION SCROLL SVG */}
+            <motion.svg
+              initial={{ opacity: 0.2, y: 0 }}
+              animate={{ opacity: 1, y: "10px" }}
+              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width={50}
+              height={50}
+            >
+              <path
+                d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
+                stroke="#000000"
+                strokeWidth="1"
+              ></path>
+              <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
+              <path
+                d="M15 11L12 14L9 11"
+                stroke="#000000"
+                strokeWidth="1"
+              ></path>
+            </motion.svg>
         </div>
+
+
         {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />

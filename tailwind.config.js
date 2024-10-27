@@ -12,7 +12,21 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      textShadow: { // Add textShadow extension here
+        lg: '2px 2px 4px rgba(0, 0, 0, 0.5)', // Define the shadow here
+      },
     },
   },
-  plugins: [],
+  variants: {
+    textShadow: ['responsive'], // If you want to use responsive variants
+  },
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.text-shadow-lg': {
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        },
+      });
+    },
+  ],
 };

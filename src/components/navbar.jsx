@@ -82,33 +82,42 @@ const Navbar = () => {
           href="/"
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <span className="text-white mr-1">Lama</span>
+          <span className="text-white mr-1">Theoda</span>
           <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
             .dev
           </span>
         </Link>
       </div>
-      {/* SOCIAL */}
-      <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="/">
-          <Image src="/github.png" alt="" width={24} height={24} />
+
+
+        {/* Social Media Links */}
+        <div className="hidden md:flex gap-4 w-1/3">
+        {/* GitHub Link */}
+        <Link href="https://github.com/TheodaVidyani">
+          <Image src="/github.png" width={30} height={30} alt="Github Logo" />
         </Link>
-        <Link href="/">
-          <Image src="/dribbble.png" alt="" width={24} height={24} />
+
+        {/* LinkedIn Link */}
+        <Link href="https://www.linkedin.com/in/theoda-hettiarachchi-8536b2266">
+          <Image
+            src="/linkedin.png"
+            width={30}
+            height={30}
+            alt="LinkedIn Logo"
+          />
         </Link>
-        <Link href="/">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
+
+        {/* Medium Link */}
+        <Link href="https://medium.com/@theodahettiarachchi00">
+          <Image src="/medium.png" width={30} height={30} alt="Medium Logo" />
         </Link>
-        <Link href="/">
-          <Image src="/facebook.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/pinterest.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
+
+        {/* Email Link */}
+        <Link href="mailto:theodahettiarachchi00@gmail.com">
+          <Image src="/email.jpg" width={30} height={30} alt="Email Logo" />
         </Link>
       </div>
+
       {/* RESPONSIVE MENU */}
       <div className="md:hidden">
         {/* MENU BUTTON */}
