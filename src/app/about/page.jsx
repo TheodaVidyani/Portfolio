@@ -16,6 +16,9 @@ const AboutPage = () => {
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
+  const activitiesRef = useRef();
+  const isActivitiesRefInView = useInView(activitiesRef, { margin: "-100px" });
+
   return (
     <motion.div
       className="h-full"
@@ -27,6 +30,7 @@ const AboutPage = () => {
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
+         
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
@@ -349,6 +353,64 @@ const AboutPage = () => {
             </motion.svg>
         </div>
 
+
+          {/* EXTRA CURRICULAR ACTIVITIES CONTAINER */}
+          {/* <div className="flex flex-col gap-12 justify-center pb-48" 
+          ref={activitiesRef}>
+            <motion.h1
+              initial={{ x: "-300px" }}
+              animate={isActivitiesRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl"
+            >
+              Me through my university era with extracurricular activities
+            </motion.h1>
+
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={isActivitiesRefInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.3 }}
+              className="flex flex-col md:flex-row gap-8 items-center"
+            >
+              <Image
+                src="/Rota ClubService.jpg"
+                alt="Description of Activity 1"
+                width={200}
+                height={200}
+                className="rounded-lg object-cover"
+              />
+              <div>
+                <h2 className="font-bold text-xl">Club Service Co-Director</h2>
+                <p className="text-lg">
+                I have taken on the role of Co-Director of the Club Service Avenue of the Rotaract Club of the University of Moratuwa for the RI year 2023-24 during the 28th installation ceremony that took place on September 24th! It was a great platform to contribute my skills and collaborate with a fantastic RotaractMora team to make our projects even more successful.
+                </p>
+              </div>
+            </motion.div>
+
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={isActivitiesRefInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.4 }}
+              className="flex flex-col md:flex-row gap-8 items-center"
+            >
+              <Image
+                src="/path/to/your/activity2.jpg" // Update with your image path
+                alt="Description of Activity 2"
+                width={200}
+                height={200}
+                className="rounded-lg object-cover"
+              />
+              <div>
+                <h2 className="font-bold text-xl">Data Storm</h2>
+                <p className="text-lg">
+                  Brief description about your second extracurricular activity goes here. Highlight your role and experiences.
+                </p>
+              </div>
+            </motion.div>
+
+          </div> */}
 
         {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
