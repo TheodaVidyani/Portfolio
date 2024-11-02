@@ -29,15 +29,15 @@ const Homepage = () => {
         <p className="text-gray-600 p-7 leading-relaxed mb-4 text-sm md:text-base lg:text-lg">
           Welcome to my portfolio! I'm Theoda Hettiarachchi, a third-year
           Information Technology undergraduate at the University of Moratuwa.
-          Here, you’ll find a showcase of my passion for crafting software
+          Here, you will find a showcase of my passion for crafting software
           solutions that drive innovation and impact. With a strong foundation
           in programming languages like Java and C, and expertise in tools such
           as React, Node.js, and MongoDB, my experience spans a range of
-          challenging projects, where I've combined technical skills and
+          challenging projects, where I&lsquo;ve combined technical skills and
           innovative thinking to create effective solutions.
         </p>
         <h3 className="text-xl text-center italic text-shadow-lg mx-4">
-          "Building Innovation Through Code..."
+        &quot;"Building Innovation Through Code...&quot;"
         </h3>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
