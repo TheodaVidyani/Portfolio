@@ -37,7 +37,7 @@ const Homepage = () => {
           innovative thinking to create effective solutions.
         </p>
         <h3 className="text-xl text-center italic text-shadow-lg mx-4">
-        &quot;"Building Innovation Through Code...&quot;"
+        &quot;Building Innovation Through Code...&quot;
         </h3>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
