@@ -45,7 +45,7 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            I'm an enthusiastic and detail-oriented third-year undergraduate in
+            I&apos;m an enthusiastic and detail-oriented third-year undergraduate in
             Information Technology at the University of Moratuwa, Sri Lanka.
             Currently pursuing a BSc (Hons.) in Information Technology. I am
             currently working on actively expanding my expertise in software

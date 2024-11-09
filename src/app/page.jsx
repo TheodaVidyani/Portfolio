@@ -27,7 +27,7 @@ const Homepage = () => {
           Full-Stack Developer
         </h3>
         <p className="text-gray-600 p-7 leading-relaxed mb-4 text-sm md:text-base lg:text-lg">
-          Welcome to my portfolio! I'm Theoda Hettiarachchi, a third-year
+          Welcome to my portfolio! I&lsquo;m Theoda Hettiarachchi, a third-year
           Information Technology undergraduate at the University of Moratuwa.
           Here, you will find a showcase of my passion for crafting software
           solutions that drive innovation and impact. With a strong foundation
