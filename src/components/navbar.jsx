@@ -121,10 +121,10 @@ const Navbar = () => {
       </div>
 
       {/* RESPONSIVE MENU */}
-      <div className="md:hidden">
+      <div className="md:hidden z-50">
         {/* MENU BUTTON */}
         <button
-          className="w-10 h-8 flex flex-col justify-between z-50 relative"
+          className="w-10 h-8 flex flex-col justify-between relative"
           onClick={() => setOpen((prev) => !prev)}
         >
           <motion.div
