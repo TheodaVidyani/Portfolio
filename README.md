@@ -49,14 +49,6 @@ A contact form and details for anyone interested in reaching out or discussing p
 
 ---
 
-## 📈 Project Insights
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YourUsername&show_icons=true&theme=radical" alt="GitHub Stats" />
-</p>
-
----
-
 ## 🌐 Connect with Me
 
 Feel free to reach out for collaboration, discussion, or feedback!
