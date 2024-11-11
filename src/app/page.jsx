@@ -2,7 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
+const links = [
+  { url: "/contact", title: "Contact" },
+  { url: "/portfolio", title: "View My Work" },
+];
 
 const Homepage = () => {
   return (
@@ -18,12 +23,12 @@ const Homepage = () => {
           <Image src="/Theoda.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-17 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-5xl md:text-5xl font-bold mt-60 text-center">
+          <h1 className="text-5xl md:text-5xl font-bold mt-60 p-4 text-center">
           Theoda Hettiarachchi
         </h1>
-        <h3 className="text-4xl text-center text-shadow-lg mx-4">
+        <h3 className="text-3xl md:text-4xl text-center text-shadow-lg mx-4">
           Full-Stack Developer
         </h3>
         <p className="text-gray-600 p-7 leading-relaxed mb-4 text-sm md:text-base lg:text-lg">
@@ -36,18 +41,25 @@ const Homepage = () => {
           challenging projects, where I&lsquo;ve combined technical skills and
           innovative thinking to create effective solutions.
         </p>
-        <h3 className="text-xl text-center italic text-shadow-lg mx-4">
+        <h3 className="text-xl text-center italic text-shadow-lg mx-4 p-4">
         &quot;Building Innovation Through Code...&quot;
         </h3>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
-            <button className="p-4 rounded-lg ring-1 mb-10 ring-black bg-black text-white">
-              View My Work
-            </button>
-            <button className="p-4 rounded-lg mb-10 ring-1 ring-black">
-              Contact Me
-            </button>
-          </div>
+      {/* View My Work Button */}
+      <Link href={links[1].url}>
+        <button className="p-4 rounded-lg ring-1 mb-10 ring-black bg-black text-white">
+          {links[1].title}
+        </button>
+      </Link>
+
+      {/* Contact Me Button */}
+      <Link href={links[0].url}>
+        <button className="p-4 rounded-lg mb-10 ring-1 ring-black">
+          {links[0].title}
+        </button>
+      </Link>
+    </div>
         </div>
       </div>
     </motion.div>
