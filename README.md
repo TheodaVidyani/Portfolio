@@ -1,41 +1,61 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Theoda Hettiarachchi - Animated Portfolio Website
 
-## Getting Started
+<!-- Dynamic Project Views Counter -->
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=YourUsername&label=Project%20views&color=0e75b6&style=flat" alt="Project views" /> </p>
 
-First, run the development server:
+<!-- Typing Animation -->
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Welcome+to+My+Animated+Portfolio!;Showcasing+My+Work+and+Skills;Built+with+Next.js,+Framer+Motion,+and+Tailwind+CSS)](https://git.io/typing-svg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<!-- Intro -->
+Welcome to my **Portfolio**! This project is a showcase of my skills, projects, and experiences, created with **Next.js**, **Framer Motion**, and **Tailwind CSS**. It provides a dynamic, interactive experience for users with smooth animations and a modern design.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Key Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js Framework**: Leveraging Next.js for server-side rendering (SSR), static site generation (SSG), and efficient performance.
+- **Framer Motion Animations**: Interactive, smooth animations to enhance the user experience as you navigate through the portfolio.
+- **Tailwind CSS**: Utilized Tailwind for utility-first CSS, ensuring a responsive and customizable design.
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+- **Interactive UI**: Animated transitions, hover effects, and scroll-based animations create an engaging experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🛠️ Technologies & Tools
 
-## Learn More
+- **Frontend Development**:  
+  ![Next.js](https://img.shields.io/badge/Next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)
+  ![React.js](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-To learn more about Next.js, take a look at the following resources:
+- **Animations**:  
+  ![Framer Motion](https://img.shields.io/badge/Framer_Motion-%2361DAFB.svg?style=for-the-badge&logo=framer&logoColor=white)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Version Control & Collaboration**:  
+  ![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+  ![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📂 Sections of the Portfolio
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### [Home Page](#)
+The landing page of my portfolio, introducing myself with an animated typing effect and smooth scroll animations.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-=======
-# Portfolio
-Welcome to my portfolio! I’m Theoda HettiarThis portfolio showcases a range of my projects, including a Laboratory Information Management System and a Note App. Explore my work to see how I turn ideas into impactful solutions!
->>>>>>> 75300b4b8870d9c3718388317ff485a3076aad78
+### [About Me](#)
+A section detailing my background, skills, and experiences as a full-stack developer and IT student.
+
+### [Projects](#)
+Showcasing key projects I’ve worked on, including software development, web apps, and more.
+
+### [Contact](#)
+A contact form and details for anyone interested in reaching out or discussing potential collaborations.
+
+---
+
+## 🌐 Connect with Me
+
+Feel free to reach out for collaboration, discussion, or feedback!
+
+- 📧 *Email*: [theodahettiarachchi00@gmail.com](mailto:theodahettiarachchi00@gmail.com)
+- 💼 *LinkedIn*: [Theoda Hettiarachchi](https://www.linkedin.com/in/theoda-hettiarachchi-8536b2266/)
+
+---
+
+## 🎯 Let's Build Something Amazing Together!
