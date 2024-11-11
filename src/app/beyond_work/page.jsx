@@ -1,6 +1,6 @@
 "use client";
-import { motion, useInView } from "framer-motion";
-import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import React from "react";
 import Image from "next/image";
 
 const BeyondWork = () => {
@@ -55,63 +55,54 @@ const BeyondWork = () => {
     },
   ];
 
-  const refs = useRef(works.map(() => React.createRef())); // Create refs for each work item
-
   return (
     <div className="h-full overflow-scroll flex flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 gap-12">
-      {works.map((work, index) => {
-         const isInView = useInView(refs.current[index], { once: true });
-
-        return (
+      {works.map((work, index) => (
+        <motion.div
+          key={work.id}
+          className={`flex flex-col lg:flex-row ${
+            index % 2 === 1 ? "lg:flex-row-reverse" : ""
+          } items-center gap-8`}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: index === 0 ? 0.8 : index * 0.2 + 0.1,
+          }}
+        >
+          {/* Work Image */}
           <motion.div
-            key={work.id}
-            ref={refs.current[index]} // Use the specific ref for the current work item. This has to be used because of the react hook error.
-            //ref={ref} If not that error, we were using this.
-            className={`flex flex-col lg:flex-row ${
-              index % 2 === 1 ? "lg:flex-row-reverse" : ""
-            } items-center gap-8`}
-            initial={{ opacity: 0, y: 50 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{
-              duration: 1,
-              delay: index === 0 ? 0.8 : index * 0.2 + 0.1,
-            }}
+            whileHover={{ scale: 1.05 }}
+            className="md:w-1/2 w-full"
           >
-            {/* Work Image */}
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="md:w-1/2 w-full"
-            >
-              <Image
-                src={work.imageSrc}
-                alt={`Work ${work.id}`}
-                width={400}
-                height={100}
-                className="w-full h-auto rounded-xl"
-              />
-            </motion.div>
-            {/* LINE */}
-            <motion.div
-              className="w-1 h-full bg-gray-600 rounded relative"
-              initial={{ opacity: 0, scaleY: 0 }} // Start with the line invisible and scaled down
-              animate={isInView ? { opacity: 1, scaleY: 1 } : {}} // Animate to full opacity and scale when in view
-              transition={{ duration: 0.6, delay: index * 0.2 + 0.4 }} // Adjust delay based on index
+            <Image
+              src={work.imageSrc}
+              alt={`Work ${work.id}`}
+              width={400}
+              height={100}
+              className="w-full h-auto rounded-xl"
             />
-
-            {/* Work Description */}
-            <motion.div
-              className={`md:w-1/2 w-full text-lg text-gray-700 p-4 ${
-                index % 2 === 0 ? "text-left" : "text-right"
-              }`}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.2 + 0.2 }}
-            >
-              <p>{work.description}</p>
-            </motion.div>
           </motion.div>
-        );
-      })}
+          {/* LINE */}
+          <motion.div
+            className="w-1 h-full bg-gray-600 rounded relative"
+            initial={{ opacity: 0, scaleY: 0 }}
+            animate={{ opacity: 1, scaleY: 1 }}
+            transition={{ duration: 0.6, delay: index * 0.2 + 0.4 }}
+          />
+          {/* Work Description */}
+          <motion.div
+            className={`md:w-1/2 w-full text-lg text-gray-700 p-4 ${
+              index % 2 === 0 ? "text-left" : "text-right"
+            }`}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 + 0.2 }}
+          >
+            <p>{work.description}</p>
+          </motion.div>
+        </motion.div>
+      ))}
     </div>
   );
 };
