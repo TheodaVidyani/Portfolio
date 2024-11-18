@@ -18,19 +18,19 @@ const items = [
     id: 2,
     color: "from-blue-300 to-violet-300",
     title: "Note App",
-    desc: "To simplify task management by allowing users to create, edit, delete and organize notes with tagging functionality. Also implemented tag-based filtering.",
+    desc: "To simplify note management by allowing users to create, edit, delete and organize notes with tagging functionality. Also implemented tag-based filtering.",
     img: "/note app.png",
-    link: "",
+    link: "https://drive.google.com/file/d/1R98yMbWvUVOEyCtDV-YEb3bo66eVuiIJ/view?usp=drive_link",
   },
 
-  // {
-  //   id: 3,
-  //   color: "from-violet-300 to-purple-300",
-  //   title: "Vanilla Book App",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  //   img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  //   link: "https://lama.dev",
-  // },
+  {
+    id: 3,
+    color: "from-violet-300 to-purple-300",
+    title: "ToDo App",
+    desc: "To make task management simple, providing a user-friendly interface and a robust backend for handling daily tasks. Real-time notifications powered by Toast Messages enhance the user experience.",
+    img: "/ToDo.png",
+    link: "https://drive.google.com/file/d/1cb5phfEKpaQZfUGPP5WMkObvP77tii-i/view?usp=sharing",
+  },
 
   // {
   //   id: 4,
