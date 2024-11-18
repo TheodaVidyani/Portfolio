@@ -20,7 +20,7 @@ const items = [
     title: "Note App",
     desc: "To simplify note management by allowing users to create, edit, delete and organize notes with tagging functionality. Also implemented tag-based filtering.",
     img: "/note app.png",
-    link: "https://drive.google.com/file/d/1R98yMbWvUVOEyCtDV-YEb3bo66eVuiIJ/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1R98yMbWvUVOEyCtDV-YEb3bo66eVuiIJ/view?usp=sharing",
   },
 
   {
